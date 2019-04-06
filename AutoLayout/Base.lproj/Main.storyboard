@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,21 +15,32 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutoLayout" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wrJ-jd-TbE" userLabel="blue">
-                                <rect key="frame" x="0.0" y="120" width="119.5" height="527"/>
+                                <rect key="frame" x="0.0" y="120" width="250.5" height="884"/>
                                 <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DCk-mf-Xa5" userLabel="red">
-                                <rect key="frame" x="127.5" y="120" width="239.5" height="527"/>
+                                <rect key="frame" x="258.5" y="120" width="501.5" height="884"/>
                                 <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BlueRed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yT8-1X-Xcq">
+                                <rect key="frame" x="320" y="9" width="128.5" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="34"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wrJ-jd-TbE" secondAttribute="bottom" constant="20" id="EJd-he-tzz"/>
+                            <constraint firstItem="yT8-1X-Xcq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Elu-eU-Uhw"/>
+                            <constraint firstItem="DCk-mf-Xa5" firstAttribute="top" secondItem="yT8-1X-Xcq" secondAttribute="bottom" constant="70" id="Hmi-Vm-tib"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DCk-mf-Xa5" secondAttribute="bottom" constant="20" id="IN8-T3-Eq7"/>
                             <constraint firstItem="wrJ-jd-TbE" firstAttribute="width" secondItem="DCk-mf-Xa5" secondAttribute="width" multiplier="0.5" priority="750" id="LaM-tn-141"/>
                             <constraint firstItem="DCk-mf-Xa5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="Phi-Bt-r0a"/>
