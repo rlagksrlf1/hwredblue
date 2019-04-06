@@ -35,21 +35,49 @@
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="34"/>
                                 </variation>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RedBlue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KmU-in-LzL">
+                                <rect key="frame" x="352" y="58" width="64" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="KmU-in-LzL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4f7-Op-4gg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wrJ-jd-TbE" secondAttribute="bottom" constant="20" id="EJd-he-tzz"/>
                             <constraint firstItem="yT8-1X-Xcq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Elu-eU-Uhw"/>
-                            <constraint firstItem="DCk-mf-Xa5" firstAttribute="top" secondItem="yT8-1X-Xcq" secondAttribute="bottom" constant="70" id="Hmi-Vm-tib"/>
+                            <constraint firstItem="DCk-mf-Xa5" firstAttribute="top" secondItem="yT8-1X-Xcq" secondAttribute="bottom" constant="70" id="Hmi-Vm-tib">
+                                <variation key="heightClass=compact" constant="30"/>
+                            </constraint>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DCk-mf-Xa5" secondAttribute="bottom" constant="20" id="IN8-T3-Eq7"/>
                             <constraint firstItem="wrJ-jd-TbE" firstAttribute="width" secondItem="DCk-mf-Xa5" secondAttribute="width" multiplier="0.5" priority="750" id="LaM-tn-141"/>
                             <constraint firstItem="DCk-mf-Xa5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="Phi-Bt-r0a"/>
                             <constraint firstItem="wrJ-jd-TbE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QUe-tb-c3B"/>
+                            <constraint firstItem="KmU-in-LzL" firstAttribute="top" secondItem="yT8-1X-Xcq" secondAttribute="bottom" constant="8" id="QlI-kX-awb"/>
                             <constraint firstItem="DCk-mf-Xa5" firstAttribute="leading" secondItem="wrJ-jd-TbE" secondAttribute="trailing" constant="8" id="Tw9-gL-4tL"/>
                             <constraint firstAttribute="trailing" secondItem="DCk-mf-Xa5" secondAttribute="trailing" constant="8" id="jCJ-sl-pmi"/>
                             <constraint firstItem="wrJ-jd-TbE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="ybq-tS-eb6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="KmU-in-LzL"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Elu-eU-Uhw"/>
+                                <exclude reference="QlI-kX-awb"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="KmU-in-LzL"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Elu-eU-Uhw"/>
+                                <include reference="QlI-kX-awb"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
